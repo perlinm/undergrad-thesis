@@ -15,16 +15,16 @@
 \captionsetup{textfont={small,bf,color=blue}}
 \captionsetup{labelformat=empty}
 
-%%% physics and math
-\usepackage[boldvectors,braket]{physymb}
-\newcommand{\bk}{\Braket} % shorthand for braket notation
-\usepackage{amsmath}
+%%% symbols, notations, etc.
+\usepackage{physics,braket,bm,commath,amssymb} % physics and math packages
+\renewcommand{\t}{\text} % text in math mode
+\newcommand{\f}[2]{\dfrac{#1}{#2}} % shorthand for fractions
+\renewcommand{\d}{\partial} % partial d
 \newcommand{\p}[1]{\left(#1\right)} % parenthesis
 \renewcommand{\sp}[1]{\left[#1\right]} % square parenthesis
 \renewcommand{\set}[1]{\left\{#1\right\}} % curly parenthesis
-\newcommand{\f}[2]{\dfrac{#1}{#2}}
-\renewcommand{\d}{\partial}
-\renewcommand{\t}[1]{\text{#1}}
+\renewcommand{\v}{\bm} % bold vectors
+\newcommand{\bk}{\Braket} % shorthand for braket notation
 
 \let\olditem\item
 \renewcommand{\item}{\setlength{\itemsep}{6pt}\olditem}
